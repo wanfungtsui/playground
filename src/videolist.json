@@ -1,0 +1,22 @@
+{
+    "videos": [
+      {
+        "id": "0001",
+        "title": "Video 1",
+        "playurl": "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1920_18MG.mp4",
+        "description": "Information Technology"
+      },
+      {
+        "id": "0002",
+        "title": "Video 2",
+        "playurl": "https://download.samplelib.com/mp4/sample-5s.mp4",
+        "description": "Computer Engineering"
+      },
+      {
+        "id": "0003",
+        "title": "Video 3",
+        "playurl": "https://www.appsloveworld.com/wp-content/uploads/2018/10/640.mp4",
+        "description": "Information Technology"
+      }
+    ]
+  }
