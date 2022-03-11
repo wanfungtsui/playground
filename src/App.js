@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Player from './player';
-import Videos from './videolist.json'
-
+import Videos from './videolist.json';
+import Card from'./card'
 
 
 class App extends Component {
@@ -18,21 +18,23 @@ class App extends Component {
   render() {
     return (
 
-      <div className="App">
-      <h1>Shaka Player Demo</h1>
-      <Player playurl={this.state.uri} />
-  
-        
-      <h1>Video List</h1> 
+      <div className="Main-section">
+              <div className="Left-section">
+      <Player playurl={this.state.uri} /> 
+      </div>
+      
+        <div className='Right-section'>
+          
       {Videos.videos.map((item, i) => (
       <ul key={i}>
-          
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
-            <button onClick={() => this.handleClick(item.playurl)}>Play</button>
-      </ul>
+          <div className='channel-card' onClick={() => this.handleClick(item.playurl)}>
+          <Card title={item.title} description={item.description} icon={item.icon} style="background-color: '{item.color}"/>
+            </div>
+                  </ul>
   
   ))}
+  </div>
+     
           
       </div>
 
