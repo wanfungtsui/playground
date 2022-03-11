@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.Main-section {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+}
+
+.Left-section {
+  background-color: aquamarine;
+}
+
+.Right-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin:5px;
+}
+
+.channel-card {
+  font-size:10px;
+}
